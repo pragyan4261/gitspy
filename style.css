@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sometype+Mono&display=swap');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sometype Mono', monospace;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

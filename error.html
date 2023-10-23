@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&family=Sometype+Mono&display=swap');
+    html,body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Sometype Mono', monospace;
+    }
+    .background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+</style>
+<body class="bg-black text-white flex flex-col justify-center items-center">
+    <div class="flex flex-col text-center relative top-[20rem] space-y-7">
+
+        <h1 class="text-3xl sm:text-5xl font-semibold">Oops! Username Not Found</h1>
+        <p class="text-xl sm:text-3xl font-semibold">It seems the GitHub username you entered doesn't exist.</p>
+        <a href="/index.html" class="m-auto"><button
+            class="mt-3 bg-black border-2 h-12 w-72 rounded-xl text-white text-lg hover:shadow-inner hover:shadow-white">Search another username</button></a>
+    </div>
+
+    <canvas class="background"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
