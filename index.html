@@ -11,7 +11,7 @@
 </head>
 
 <body class="flex flex-col justify-center items-center mt-10 text-white bg-black">
-  <h1 class="text-4xl sm:text-5xl font-semibold text-center mt-36">Welcome to GitSpy</h1>
+  <h1 class="text-3xl sm:text-5xl font-semibold text-center mt-36">Welcome to GitSpy</h1>
   <form class="flex mb-7 sm:mb-10 w-[90%] sm:w-[90%] md:w-[70%] lg:w-[50%] space-x-3 mt-[10rem]">
     <input type="text" placeholder='Enter Github Username' id="user_search"
       class="w-[80%] rounded-xl pl-3 border-2 border-white bg-transparent text-white">
@@ -20,20 +20,20 @@
       onclick="toggleModal()">Search</button>
   </form>
   <div id="modal"
-    class="flex flex-col border-2 w-[90%] sm:w-[90%] md:w-[70%] lg:w-[50%] rounded-3xl justify-center items-left space-y-7 p-4 sm:p-10 bg-black hidden -mt-[26rem] sm:-mt-[20rem]">
+    class="flex flex-col border-2 w-[95%] sm:w-[90%] md:w-[70%] lg:w-[60%] rounded-3xl justify-center items-left space-y-7 p-3 sm:p-10 bg-black hidden -mt-[26rem] sm:-mt-[20rem] lg:-mt-[25rem]">
     <div class="flex justify-center sm:justify-between flex-wrap sm:flex-nowrap items-center">
       <img src="" alt="" id="avatar" class="border-2 h-32 w-32 sm:h-40 sm:w-40 rounded-full">
-      <div class="flex justify-between items-center w-[95%] sm:w-[60%] mt-5 space-x-2">
+      <div class="flex justify-between items-center w-[100%] sm:w-[60%] mt-5 space-x-3">
         <div class="flex flex-col justify-center items-center sm:items-left">
-          <p class="text-lg font-medium">Repositories</p>
+          <p class="text-md sm:text-lg font-medium">Repositories</p>
           <p id="repo_no" class="text-lg font-semibold"></p>
         </div>
         <div class="flex flex-col justify-center items-center sm:items-left">
-          <p class="text-lg font-medium">Followers</p>
+          <p class="text-md sm:text-lg font-medium">Followers</p>
           <p id="followers" class="text-lg font-semibold"></p>
         </div>
         <div class="flex flex-col justify-center items-center sm:items-left">
-          <p class="text-lg font-medium">Following</p>
+          <p class="text-md sm:text-lg font-medium">Following</p>
           <p id="following" class="text-lg font-semibold"></p>
         </div>
       </div>
